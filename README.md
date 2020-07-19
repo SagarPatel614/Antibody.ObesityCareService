@@ -1,1 +1,1 @@
-Antibody.ObesityCareService
+# ObesityCareService (Static Angular Solution)
