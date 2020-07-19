@@ -1,0 +1,102 @@
+<div id="page-container">
+    <app-nav-menu></app-nav-menu>
+    <div class="footer-border"></div>
+    <div id="content-wrap">
+        <div class="container padding-top" style="padding-top: 1% !important;">
+
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="110%">
+                <tr>
+                    <td>
+                        <a routerLink="/home"><img src="images/home.png" class="border-glow" style="max-width: 50px; border-radius: 50%;" alt="Home" /></a>
+                    </td>
+                    <td>
+                        <a [routerLink]="link"><img src="images/logo.png" style="float: right;" alt="Obesity Care logo" /></a>
+                    </td>
+                </tr>
+            </table>
+
+
+            <!-- <div>
+                <a [routerLink]="home"><img src="images/home.png" style="max-width: 50px;" alt="Home" /></a>
+            </div>
+            <div class="logo">
+
+                <a [routerLink]="link"><img src="images/logo.png" alt="Obesity Care logo" /></a>
+            </div> -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-line"></div>
+
+        <div class="footer-content container padding-top" style="padding-top: 0% !important; padding-bottom: 0% !important;">
+            <div class="row library-sm">
+                <div class="col" style="padding-left: 0% !important;">
+                    <a [routerLink]="'/home'"><img class="dep float-left" src="images/DEP-logo.jpg" alt="Diabetes Education Program logo" /></a>
+                </div>
+                <!-- <div style="text-align: center !important;">
+                    <a [routerLink]="link" class="btn btn-outline-primary mt-2" style="padding: .30rem .5rem;font-size: .875rem;line-height: 1.5;border-radius: .2rem;" *ngIf="isFooterBtnVisible">Video Library</a>
+                </div> -->
+                <div class="col" style="padding-right: 0% !important;">
+                    <img class="novo float-right" style="padding-top: 0px !important;" src="images/novo-logo.jpg" alt="NovoNordisk logo" />
+                </div>
+            </div>
+            <div class="row library-lg">
+                <div class="col" style="padding-left: 0% !important;">
+                    <a [routerLink]="'/home'"><img class="dep float-left" src="images/DEP-logo.jpg" alt="Diabetes Education Program logo" /></a>
+                </div>
+
+                <!-- <div class="col library-btn-lg">
+                    <a [routerLink]="link" class="btn btn-outline-primary mt-2" *ngIf="isFooterBtnVisible">Video Library</a>
+                </div> -->
+
+                <div class="col" style="padding-right: 0% !important;">
+                    <img class="novo float-right" src="images/novo-logo.jpg" alt="NovoNordisk logo" />
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--
+
+<app-nav-menu></app-nav-menu>
+<div class="footer-border"></div>
+<div class="site-contents">
+  <div class="container padding-top" style="padding-top: 1% !important;">
+    <div class="logo">
+      <a [routerLink]="link"><img src="images/logo.png" alt="Obesity Care logo" /></a>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<div class="footer survey-footer">
+  <div class="footer-line"></div>
+
+  <div class="footer-content container padding-top" style="padding-top: 0% !important;">
+    <div class="row library-sm">
+      <div class="col" style="padding-left: 0% !important;">
+        <a [routerLink]="link"><img class="dep float-left" src="images/DEP-logo.jpg"
+            alt="Diabetes Education Program logo" /></a>
+      </div>
+      <div class="col" style="padding-right: 0% !important;">
+        <img class="novo float-right" src="images/novo-logo.jpg" alt="NovoNordisk logo" />
+      </div>
+    </div>
+
+    <div class="row library-lg">
+      <div class="col" style="padding-left: 0% !important;">
+        <a [routerLink]="'/home'"><img class="dep float-left" src="images/DEP-logo.jpg"
+            alt="Diabetes Education Program logo" /></a>
+      </div>
+
+      <div class="col library-btn-lg">
+        <a [routerLink]="link" class="btn btn-outline-primary mt-2" *ngIf="isFooterBtnVisible">Video Library</a>
+      </div>
+
+      <div class="col" style="padding-right: 0% !important;">
+        <img class="novo float-right" src="images/novo-logo.jpg" alt="NovoNordisk logo" />
+      </div>
+    </div>
+  </div>
+</div> -->

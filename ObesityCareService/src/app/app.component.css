@@ -1,0 +1,37 @@
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    .body-content {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1240px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .stack-column,
+    .stack-column-center {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        direction: ltr !important;
+    }
+    .stack-column-center {
+        text-align: center !important;
+    }
+}
+
+.border-glow:hover {
+    color: #FFF;
+    box-shadow: 0 0 10px 3px #008499;
+    /* font-size: 50px; */
+    /* background-color: #008499 */
+    /* margin: 50px; */
+}
