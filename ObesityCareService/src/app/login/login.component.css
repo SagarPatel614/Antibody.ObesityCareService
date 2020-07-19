@@ -1,0 +1,132 @@
+.container.padding-top{
+  padding: 3% 10%;
+}
+.links a{
+  font-size: 12px;
+  color: #058199;
+  display: inline-block;
+}
+
+.links a:hover{
+  color: #058199;
+}
+
+.links a::before {
+  content: "";
+  background-image: url('/images/video-play.png');
+  width: 20px;
+  height: 20px;
+  background-size: 15px 15px;
+  display: block;
+  float: left;
+  background-repeat: no-repeat;
+}
+
+img{
+  max-width: 250px;
+  width: 100%;
+}
+
+.logo{
+  width: 80%;
+  padding: 0% 5% 5% 0%;
+}
+
+p{
+  color: #058199;
+}
+
+p a{
+  color: #058199;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p a:hover{
+  color: #03505f;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#accordion .card-header{
+  background-color: #ffffff;
+  border-top: 2px solid #f1f1f1;
+  border-right: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+#accordion .card-body{
+  padding-top:  1.2em;
+  background-color: #ffffff;
+  border-right: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+#accordion .card-header h5 {
+  display: grid;
+}
+
+.video-info{
+  display: flex;
+  align-items: center;
+}
+
+.video-desc{
+  max-width: 50%;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus,
+.btn-outline-primary:not([disabled]):not(.disabled):active, .btn-outline-primary:not([disabled]):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle{
+  box-shadow: none;
+}
+
+.btn-outline-primary {
+  color: #058199;
+  border-color: #fcb515;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffc21e;
+  border-color: #ffc21e;
+}
+
+.btn-primary {
+  background-color: #fcb515;
+  border-color: #fcb515;
+}
+
+.btn-primary:hover {
+  background-color: #ffc21e;
+  border-color: #ffc21e;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #ffc21e;
+  border-color: #ffc21e;
+}
+
+.page-title{
+  color: #058199;
+  font-size: 2.25em;
+  padding-bottom: 20px;
+}
+
+.play-icon{
+  max-width: 25px;
+}
+
+.doc-icon{
+  background-image: url('/images/doc-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 55px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1240px !important;
+}
+}

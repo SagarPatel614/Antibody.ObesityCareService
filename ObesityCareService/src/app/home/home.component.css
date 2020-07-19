@@ -1,0 +1,80 @@
+.container.padding-top{
+    padding: 3% 10%;
+}
+.links a{
+    font-size: 12px;
+    color: #058199;
+    display: inline-block;
+}
+
+.links a:hover{
+    color: #058199;
+}
+
+.links a::before {
+    content: "";
+    background-image: url('/images/video-play.png');
+    width: 20px;
+    height: 20px;
+    background-size: 15px 15px;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+img{
+    max-width: 250px;
+    width: 100%;
+}
+
+.logo{
+    width: 80%;
+    padding: 0% 5% 5% 0%;
+}
+
+.page-title{
+    color: #058199;
+    font-size: 2.25em;
+    padding-bottom: 20px;
+}
+
+.play-icon{
+    max-width: 25px;
+}
+
+.doc-icon{
+    background-image: url('/images/doc-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 55px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+#accordion .card-header h5 {
+    font-weight: normal;
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    display: grid;
+}
+
+#accordion a:hover{
+    text-decoration: none;
+}
+
+.video-info{
+    display: grid;
+}
+
+.description {
+    color: #000000;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1240px !important;
+}
+}

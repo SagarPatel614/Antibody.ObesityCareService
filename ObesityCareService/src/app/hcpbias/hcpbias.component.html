@@ -1,0 +1,100 @@
+<a style="margin-bottom: 10px;" [routerLink]="'/hcphome'" class="btn btn-outline-primary mt-2" href="#">Video Library</a>
+
+<div id="accordion" role="tablist">
+    <div class="card">
+        <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Bias and Obesity Quickdraw (EN audio | no subtitles)
+            </h5>
+        </div>
+
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2" (click)="download(slides1)">Download Video</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingOne' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/281875867" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                    <!-- <iframe class="embed-responsive-item" src="https://vimeo.com/281875867/79ed75bedd" allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" role="tab" id="headingThree" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="true" aria-controls="collapseThree">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Bias and Obesity Quickdraw (EN audio | EN subtitles)
+            </h5>
+        </div>
+
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2" (click)="download(slides2)">Download Video</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingTwo' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/434118809" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" role="tab" id="headingTwo" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="true" aria-controls="collapseTwo">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Bias and Obesity Quickdraw (EN audio | FR subtitles)
+            </h5>
+        </div>
+
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2" (click)="download(slides3)">Download Video</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingThree' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/345691901" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                    <!-- <iframe class="embed-responsive-item" src="https://vimeo.com/281875867/79ed75bedd" allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="card">
+        <div class="card-header" role="tab" id="headingTwo" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="true" aria-controls="collapseTwo">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+              Bias-Is Obesity a Real Condition?
+            </h5>
+        </div>
+
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Nq4IkM6QsuM?rel=0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
