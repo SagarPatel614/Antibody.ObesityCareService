@@ -1,0 +1,250 @@
+<a style="margin-bottom: 10px;" [routerLink]="'/hcphome'" class="btn btn-outline-primary mt-2" href="#">Video Library</a>
+<!-- <h4 style="  color: #c7c8c8;
+font-weight: bold;
+margin-top: 0.2em;
+margin-bottom: 0;
+font-size: 1.50em;
+padding-bottom: 10px;">
+    Long Version
+</h4> -->
+<div id="accordion" role="tablist">
+    <div class="card">
+        <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+            <h6>VIDEO</h6>
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | no subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2" (click)="download(slides)">Download Video</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingOne' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/421225394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" role="tab" id="headingThree" data-toggle="collapse" role="button" aria-expanded="true">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (FR audio | no subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2">Coming Soon</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingThree' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" role="tab" id="headingTwo" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="true" aria-controls="collapseTwo">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | FR subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2" (click)="download(slides2)">Download Video</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingTwo' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/389731510" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" role="tab" id="headingFour" data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="true" aria-controls="collapseFour">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | EN subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2" (click)="download(slides1)">Download Video</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingFour' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/432885372" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" role="tab" id="headingFive" href="#collapseFive" data-toggle="collapse" role="button" aria-expanded="true">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (FR audio | FR subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2">Coming Soon</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingFive' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/437297860" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <h4 style=" color: #c7c8c8;
+font-weight: bold;
+margin-top: 0.2em;
+margin-bottom: 0;
+font-size: 1.50em;
+padding-bottom: 10px;">
+    Short Version
+</h4>
+<div id="accordion" role="tablist">
+    <div class="card">
+        <div class="card-header" role="tab" id="headingSix" data-toggle="collapse" role="button" aria-expanded="true">
+            <h6>VIDEO</h6>
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | no subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2">Coming Soon</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingSix' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" role="tab" id="headingThree" data-toggle="collapse" role="button" aria-expanded="true">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (FR audio | no subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2">Coming Soon</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingSeven' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" role="tab" id="headingEight" data-toggle="collapse" role="button" aria-expanded="true">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | FR subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2">Coming Soon</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'Eight' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" role="tab" id="headingFour" data-toggle="collapse" role="button" aria-expanded="true">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | EN subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2">Coming Soon</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingNine' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" role="tab" id="headingFive" data-toggle="collapse" role="button" aria-expanded="true">
+            <h6>VIDEO</h6>
+
+            <h5 class="mb-0">
+                Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (FR audio | FR subtitles)
+            </h5>
+        </div>
+        <div class="card-header" role="tab">
+            <button class="btn btn-outline-primary mt-2">Coming Soon</button>
+
+            <mat-progress-bar style="margin-top:5px;" *ngIf="videoId === 'headingTen' && download$ | async as download" [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'" [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+
+        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
