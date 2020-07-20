@@ -17,7 +17,7 @@ import { DOCUMENT } from '@angular/common';
 
 export class CharactersComponent {
   ss: SharedService;
-  slides = { name: 'Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | no subtitles)', url: 'https://ocs-socmaterials.phcinc.ca/materials/ObesityCareServices/NOV20OCP020417_Appetite_System_Animated_V12_HQ_FINAL_ENG_1.mp4', videoId: 'headingOne' }
+  slides = { name: 'Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | no subtitles)', url: 'https://player.vimeo.com/external/389731510.hd.mp4?s=1db5fd01a882ecf338c7f628f1fce7e4be5ffbd7&profile_id=175&download=1', videoId: 'headingOne' }
 
   slides2 = { name: 'Appetite System Animation: The GateKeeper, The GoGetter, and The SleepyExecutive (EN audio | FR subtitles)', url: 'https://player.vimeo.com/external/389731510.hd.mp4?s=1db5fd01a882ecf338c7f628f1fce7e4be5ffbd7&profile_id=175&download=1', videoId: 'headingTwo' }
 
