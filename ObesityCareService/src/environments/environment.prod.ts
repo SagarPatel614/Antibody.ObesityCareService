@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  username: "Obesity!",
-  password: "OCS2020"
+  username: "prod",
+  password: "prod"
 };
